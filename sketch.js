@@ -43,7 +43,7 @@ let rIdentity = [
 
 function setup() {
   // put setup code here
-  createCanvas(600, 600, WEBGL); 
+  createCanvas(windowWidth, windowHeight, WEBGL); 
   camera(0, 0, 500, 0, 0, 0, 0, 1, 0);
   background(153); 
 
