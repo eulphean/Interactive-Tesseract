@@ -6,15 +6,15 @@ var gui;
 // GUI Parameters. 
 var params = {
   debug: true,
-  angleOffset: 0.005,
+  angleOffset: 0.01,
   angleOffsetMin: 0.0001,
   angleOffsetMax: 0.1,
   angleOffsetStep: 0.0001,
-  sphereRad: 5,
+  sphereRad: 1.5,
   sphereRadMin: 1,
   sphereRadMax: 10,
   sphereRadStep: 0.5,
-  w: 0, 
+  w: 1.2, 
   wMin: -5,
   wMax: 5,
   wStep: 0.1,
@@ -25,7 +25,7 @@ var params = {
   orbitControls: false,
   xy: false,
   yz: false,
-  xz: false, 
+  xz: true, 
   xw: false,
   yw: false,
   zw: false
@@ -44,7 +44,7 @@ let rIdentity = [
 function setup() {
   // put setup code here
   createCanvas(windowWidth, windowHeight, WEBGL); 
-  camera(0, 0, 500, 0, 0, 0, 0, 1, 0);
+  camera(500, -200, 100, 0, 0, 0, 0, 1, 0);
   background(153); 
 
   gui = createGui('Tesseract');
